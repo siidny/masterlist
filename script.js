@@ -17,7 +17,7 @@
                         { key: 'location', label: 'Location' },
                         { key: 'address', label: 'Address' },
                         { key: 'suburb', label: 'Suburb' },
-                        { key: 'postcode', label: 'Postcode' },
+                        { key: 'owner', label: 'Content owner' },
                     ]
                 };
             },
