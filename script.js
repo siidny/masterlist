@@ -82,6 +82,7 @@
                         return [];
                     }
                     return this.filteredTitles.length > 0 ? this.filteredTitles : this.titles;
+                    console.log(titles)
                 }
             }
         })
