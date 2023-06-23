@@ -48,7 +48,7 @@
     const address = title.address ? title.address.trim().toLowerCase() : '';
     const suburb = title.suburb ? title.suburb.trim().toLowerCase() : '';
     const state = title.state ? title.state.trim().toLowerCase() : '';
-    const postcode = title.postcode ? title.postcode.trim().toLowerCase() : '';
+    const owner = title.owner ? title.owner.trim().toLowerCase() : '';
     const classes = title.classes ? title.classes.trim().toLowerCase() : '';
 
     return publicprivate.includes(query) ||
@@ -58,7 +58,7 @@
            address.includes(query) ||
            suburb.includes(query) ||
            state.includes(query) ||
-           postcode.includes(query) ||
+           owner.includes(query) ||
            classes.includes(query);
                           
                     ));
@@ -76,7 +76,7 @@
                             address: value[4],
                             suburb: value[5],
                             state: value[6],
-                            postcode: value[7],
+                            owner: value[7],
                             classes: value[8],
                             unique: value[9]
                         };
