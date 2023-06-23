@@ -41,10 +41,10 @@
                         return;
                     }
                     this.filteredTitles = this.titles.filter(title => (
-                        title.postcode.toLowerCase().includes(query) ||
-                        title.language.toLowerCase().includes(query) ||
-                        title.classes.toLowerCase().includes(query) ||
-                        title.suburb.toLowerCase().includes(query)
+                        title.postcode.toLowerCase().includes(query.postcode) ||
+                        title.language.toLowerCase().includes(query.language) ||
+                        title.classes.toLowerCase().includes(query.classes) ||
+                        title.suburb.toLowerCase().includes(query.suburb)
                           
                     ));
                     this.noResults = this.filteredTitles.length === 0;
