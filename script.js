@@ -41,15 +41,25 @@
                         return;
                     }
                    this.filteredTitles = this.titles.filter(title => {
-        const postcode = title.postcode ? title.postcode.trim().toLowerCase() : '';
-        const language = title.language ? title.language.trim().toLowerCase() : '';
-        const classes = title.classes ? title.classes.trim().toLowerCase() : '';
-        const suburb = title.suburb ? title.suburb.trim().toLowerCase() : '';
+         const publicprivate = title.publicprivate ? title.publicprivate.trim().toLowerCase() : '';
+    const language = title.language ? title.language.trim().toLowerCase() : '';
+    const schoolname = title.schoolname ? title.schoolname.trim().toLowerCase() : '';
+    const location = title.location ? title.location.trim().toLowerCase() : '';
+    const address = title.address ? title.address.trim().toLowerCase() : '';
+    const suburb = title.suburb ? title.suburb.trim().toLowerCase() : '';
+    const state = title.state ? title.state.trim().toLowerCase() : '';
+    const postcode = title.postcode ? title.postcode.trim().toLowerCase() : '';
+    const classes = title.classes ? title.classes.trim().toLowerCase() : '';
 
-        return postcode.includes(query) ||
-               language.includes(query) ||
-               classes.includes(query) ||
-               suburb.includes(query);
+    return publicprivate.includes(query) ||
+           language.includes(query) ||
+           schoolname.includes(query) ||
+           location.includes(query) ||
+           address.includes(query) ||
+           suburb.includes(query) ||
+           state.includes(query) ||
+           postcode.includes(query) ||
+           classes.includes(query);
                           
                     ));
                     this.noResults = this.filteredTitles.length === 0;
