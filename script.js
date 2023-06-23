@@ -61,7 +61,7 @@
            owner.includes(query) ||
            classes.includes(query);
                           
-                    ));
+                   });
                     this.noResults = this.filteredTitles.length === 0;
 
                     this.initialLoad = false;
