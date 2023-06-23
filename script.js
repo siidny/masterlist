@@ -17,7 +17,7 @@
                         { key: 'location', label: 'Location' },
                         { key: 'address', label: 'Address' },
                         { key: 'suburb', label: 'Suburb' },
-                        { key: 'owner', label: 'Content owner' },
+                        { key: 'owner', label: 'Content owner' }
                     ]
                 };
             },
