@@ -40,11 +40,16 @@
                         this.initialLoad = true;
                         return;
                     }
-                    this.filteredTitles = this.titles.filter(title => (
-                        title.postcode.toLowerCase().includes(query) ||
-                        title.language.toLowerCase().includes(query) ||
-                        title.suburb.toLowerCase().includes(query) ||
-                        title.classes.toLowerCase().includes(query)
+                   this.filteredTitles = this.titles.filter(title => {
+        const postcode = title.postcode ? title.postcode.trim().toLowerCase() : '';
+        const language = title.language ? title.language.trim().toLowerCase() : '';
+        const classes = title.classes ? title.classes.trim().toLowerCase() : '';
+        const suburb = title.suburb ? title.suburb.trim().toLowerCase() : '';
+
+        return postcode.includes(query) ||
+               language.includes(query) ||
+               classes.includes(query) ||
+               suburb.includes(query);
                           
                     ));
                     this.noResults = this.filteredTitles.length === 0;
