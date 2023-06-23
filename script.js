@@ -43,7 +43,9 @@
                     this.filteredTitles = this.titles.filter(title => (
                         title.postcode.toLowerCase().includes(query) ||
                         title.language.toLowerCase().includes(query) ||
+                        title.classes.toLowerCase().includes(query) ||
                         title.suburb.toLowerCase().includes(query)
+                          
                     ));
                     this.noResults = this.filteredTitles.length === 0;
 
