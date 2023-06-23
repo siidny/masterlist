@@ -68,6 +68,7 @@
                     });
 
                     this.filteredTitles = this.titles;
+                    console.log(this.titles);
                 }
             },
             computed: {
