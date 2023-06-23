@@ -54,7 +54,8 @@
                 parseData(entries) {
                     entries.data.values.slice(1).forEach(value => {
                         const entry = {
-                            language: value[1],
+                            publicprivate: value[0],
+                              language: value[1],
                             schoolname: value[2],
                             location: value[3],
                             address: value[4],
