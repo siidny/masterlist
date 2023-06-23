@@ -12,7 +12,7 @@
                     itemsPerPage: 10,
                     initialLoad: true,
                     titleProperties: [
-                        { key: 'classes', label: 'Classes' },
+                        { key: 'classes', label: 'Class Time' },
                         { key: 'schoolname', label: 'Language school name' },
                         { key: 'location', label: 'Location' },
                         { key: 'address', label: 'Address' },
